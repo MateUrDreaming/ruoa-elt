@@ -16,7 +16,7 @@ class DatabaseSettings:
 
     @property
     def url(self) -> str:
-        return f"postgresql://{self.user}:{self.password}@{self.host}:{self.port}/{self.name}"
+        return f"postgresql+psycopg2://{self.user}:{self.password}@{self.host}:{self.port}/{self.name}"
 
     @property
     def test_url(self) -> str:

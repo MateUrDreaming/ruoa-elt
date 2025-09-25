@@ -6,6 +6,7 @@ from ruoa_extractor.src.extractors.abstract_extractor import AbstractRedditExtra
 from ruoa_extractor.src.core.models import RedditPost, RedditComment
 from ruoa_extractor.src.config.config import get_reddit_settings
 
+
 class PrawRedditExtractor(AbstractRedditExtractor):
     """Reddit extractor using PRAW (Python Reddit API Wrapper)"""
 
@@ -82,10 +83,20 @@ class PrawRedditExtractor(AbstractRedditExtractor):
         return RedditPost(
             id=submission.id,
             title=self._sanitize_text(submission.title),
+            selftext=self._sanitize_text(submission.selftext),
             author=str(submission.author) if submission.author else None,
             created_utc=self._convert_timestamp(submission.created_utc),
             score=submission.score,
+            num_comments=submission.num_comments,
+            upvote_ratio=submission.upvote_ratio,
+            url=submission.url,
             subreddit=str(submission.subreddit),
+            flair_text=submission.link_flair_text,
+            flair_css_class=submission.link_flair_css_class,
+            is_video=submission.is_video,
+            is_self=submission.is_self,
+            permalink=submission.permalink,
+            post_hint=getattr(submission, 'post_hint', None),
         )
 
     def _comment_to_model(self, comment: Comment, post_id: str) -> RedditComment:
