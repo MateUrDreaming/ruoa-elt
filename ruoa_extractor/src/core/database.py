@@ -11,7 +11,7 @@ from sqlalchemy import inspect
 class DatabaseManager:
     def __init__(self, database_url: str):
         self.database_url = database_url
-        self.engine = create_engine(database_url, future=True, echo=True)
+        self.engine = create_engine(database_url, future=True)
         self.SessionLocal = sessionmaker(bind=self.engine)
 
 

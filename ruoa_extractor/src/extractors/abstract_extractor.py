@@ -1,6 +1,6 @@
 ﻿from abc import ABC, abstractmethod
 from typing import List, Optional, Dict, Any
-from datetime import datetime
+from datetime import datetime, timezone
 
 from ruoa_extractor.src.core.models import RedditPost, RedditComment
 
@@ -33,7 +33,7 @@ class AbstractRedditExtractor(ABC):
 
     def _convert_timestamp(self, unix_timestamp: float) -> datetime:
         """Convert Unix timestamp to datetime object"""
-        return datetime.fromtimestamp(unix_timestamp, datetime.UTC)
+        return datetime.fromtimestamp(unix_timestamp, tz=timezone.utc)
 
     def _sanitize_text(self, text: Optional[str]) -> Optional[str]:
         """Clean and sanitize text content"""
