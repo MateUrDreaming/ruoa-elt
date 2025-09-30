@@ -214,7 +214,7 @@ class RedditETLPipeline:
 if __name__ == "__main__":
     print("🚀 Testing Reddit ETL Pipeline...")
 
-    pipeline = RedditETLPipeline("universityofauckland", use_test_db=True)
+    pipeline = RedditETLPipeline("universityofauckland", use_test_db=False)
 
     print("📊 Current pipeline stats:")
     stats = pipeline.get_pipeline_stats()

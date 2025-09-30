@@ -47,3 +47,56 @@
 2025-09-25 21:47:45,457 - __main__ - INFO - Posts: 0 saved, 13 skipped
 2025-09-25 21:47:45,457 - __main__ - INFO - Comments: 0 saved, 0 skipped
 2025-09-25 21:47:45,458 - __main__ - INFO - Application finished
+2025-09-30 19:14:26,528 - __main__ - INFO - Starting Reddit ETL Pipeline - Command: extract
+2025-09-30 19:14:26,528 - __main__ - INFO - Reddit API credentials configured
+2025-09-30 19:14:26,528 - __main__ - INFO - Database configured: postgresql+psycopg2://postgres:postgres@[HIDDEN]
+2025-09-30 19:14:26,528 - __main__ - INFO - Starting single extraction for r/universityofauckland
+2025-09-30 19:14:26,528 - __main__ - INFO - Parameters: posts=25, filter=day, comments=None
+2025-09-30 19:14:26,677 - __main__ - INFO - Current stats - Posts: 5, Comments: 50
+2025-09-30 19:14:26,677 - RedditETL-universityofauckland - INFO - Starting full ETL pipeline for r/universityofauckland
+2025-09-30 19:14:26,677 - RedditETL-universityofauckland - INFO - Starting post extraction - limit: 25, filter: day
+2025-09-30 19:14:33,342 - RedditETL-universityofauckland - INFO - Extracted 18 posts from r/universityofauckland
+2025-09-30 19:14:33,481 - RedditETL-universityofauckland - INFO - Post extraction completed: {'posts_saved': 18, 'posts_skipped': 0, 'total_extracted': 18}
+2025-09-30 19:14:33,484 - RedditETL-universityofauckland - INFO - Starting comment extraction for 18 posts
+2025-09-30 19:14:39,593 - RedditETL-universityofauckland - INFO - Comment extraction completed: {'comments_saved': 85, 'comments_skipped': 0, 'total_extracted': 85, 'posts_processed': 18}
+2025-09-30 19:14:39,593 - RedditETL-universityofauckland - INFO - Full pipeline completed in 12.92s: {'pipeline_duration_seconds': 12.915795, 'posts': {'posts_saved': 18, 'posts_skipped': 0, 'total_extracted': 18}, 'comments': {'comments_saved': 85, 'comments_skipped': 0, 'total_extracted': 85, 'posts_processed': 18}, 'total_data_points': 103}
+2025-09-30 19:14:39,593 - __main__ - INFO - Extraction completed in 12.92s
+2025-09-30 19:14:39,593 - __main__ - INFO - Data extracted: 103 total items
+2025-09-30 19:14:39,593 - __main__ - INFO - Posts: 18 saved, 0 skipped
+2025-09-30 19:14:39,593 - __main__ - INFO - Comments: 85 saved, 0 skipped
+2025-09-30 19:14:39,593 - __main__ - INFO - Application finished
+2025-09-30 19:20:45,256 - __main__ - INFO - Starting Reddit ETL Pipeline - Command: extract
+2025-09-30 19:20:45,256 - __main__ - INFO - Reddit API credentials configured
+2025-09-30 19:20:45,256 - __main__ - INFO - Database configured: postgresql+psycopg2://postgres:postgres@[HIDDEN]
+2025-09-30 19:20:45,256 - __main__ - INFO - Starting single extraction for r/universityofauckland
+2025-09-30 19:20:45,257 - __main__ - INFO - Parameters: posts=25, filter=day, comments=None
+2025-09-30 19:20:45,409 - __main__ - INFO - Current stats - Posts: 23, Comments: 135
+2025-09-30 19:20:45,410 - RedditETL-universityofauckland - INFO - Starting full ETL pipeline for r/universityofauckland
+2025-09-30 19:20:45,410 - RedditETL-universityofauckland - INFO - Starting post extraction - limit: 25, filter: day
+2025-09-30 19:20:52,127 - RedditETL-universityofauckland - INFO - Extracted 18 posts from r/universityofauckland
+2025-09-30 19:20:52,177 - RedditETL-universityofauckland - INFO - Post extraction completed: {'posts_saved': 0, 'posts_skipped': 18, 'total_extracted': 18}
+2025-09-30 19:20:52,177 - RedditETL-universityofauckland - INFO - No new posts saved, skipping comment extraction
+2025-09-30 19:20:52,177 - RedditETL-universityofauckland - INFO - Full pipeline completed in 6.77s: {'pipeline_duration_seconds': 6.767295, 'posts': {'posts_saved': 0, 'posts_skipped': 18, 'total_extracted': 18}, 'comments': {'comments_saved': 0, 'comments_skipped': 0, 'total_extracted': 0, 'posts_processed': 0}, 'total_data_points': 0}
+2025-09-30 19:20:52,177 - __main__ - INFO - Extraction completed in 6.77s
+2025-09-30 19:20:52,177 - __main__ - INFO - Data extracted: 0 total items
+2025-09-30 19:20:52,177 - __main__ - INFO - Posts: 0 saved, 18 skipped
+2025-09-30 19:20:52,177 - __main__ - INFO - Comments: 0 saved, 0 skipped
+2025-09-30 19:20:52,177 - __main__ - INFO - Application finished
+2025-09-30 20:33:03,437 - __main__ - INFO - Starting Reddit ETL Pipeline - Command: extract
+2025-09-30 20:33:03,438 - __main__ - INFO - Reddit API credentials configured
+2025-09-30 20:33:03,438 - __main__ - INFO - Database configured: postgresql+psycopg2://postgres:postgres@[HIDDEN]
+2025-09-30 20:33:03,438 - __main__ - INFO - Starting single extraction for r/universityofauckland
+2025-09-30 20:33:03,438 - __main__ - INFO - Parameters: posts=25, filter=day, comments=None
+2025-09-30 20:33:04,324 - __main__ - INFO - Current stats - Posts: 23, Comments: 135
+2025-09-30 20:33:04,324 - RedditETL-universityofauckland - INFO - Starting full ETL pipeline for r/universityofauckland
+2025-09-30 20:33:04,324 - RedditETL-universityofauckland - INFO - Starting post extraction - limit: 25, filter: day
+2025-09-30 20:33:11,099 - RedditETL-universityofauckland - INFO - Extracted 18 posts from r/universityofauckland
+2025-09-30 20:33:11,158 - RedditETL-universityofauckland - INFO - Post extraction completed: {'posts_saved': 1, 'posts_skipped': 17, 'total_extracted': 18}
+2025-09-30 20:33:11,161 - RedditETL-universityofauckland - INFO - Starting comment extraction for 1 posts
+2025-09-30 20:33:11,429 - RedditETL-universityofauckland - INFO - Comment extraction completed: {'comments_saved': 0, 'comments_skipped': 0, 'total_extracted': 0, 'posts_processed': 1}
+2025-09-30 20:33:11,429 - RedditETL-universityofauckland - INFO - Full pipeline completed in 7.10s: {'pipeline_duration_seconds': 7.10492, 'posts': {'posts_saved': 1, 'posts_skipped': 17, 'total_extracted': 18}, 'comments': {'comments_saved': 0, 'comments_skipped': 0, 'total_extracted': 0, 'posts_processed': 1}, 'total_data_points': 1}
+2025-09-30 20:33:11,429 - __main__ - INFO - Extraction completed in 7.10s
+2025-09-30 20:33:11,429 - __main__ - INFO - Data extracted: 1 total items
+2025-09-30 20:33:11,429 - __main__ - INFO - Posts: 1 saved, 17 skipped
+2025-09-30 20:33:11,429 - __main__ - INFO - Comments: 0 saved, 0 skipped
+2025-09-30 20:33:11,429 - __main__ - INFO - Application finished

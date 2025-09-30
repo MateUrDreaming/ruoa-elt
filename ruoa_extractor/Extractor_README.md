@@ -8,10 +8,11 @@ Reddit ETL Pipeline for r/universityofauckland
 ruoa-extractor/
 ├── src/
 │   ├── __init__.py
+│   ├── config/         # Environment variable setup
 │   ├── core/           # Core models and database setup
-│   ├── extractors/     # Reddit data extraction logic
-│   ├── storage/        # Database storage and operations
-│   └── config/         # Configuration management
+│   ├── extractors/     # Reddit data extraction logic with PRAW
+│   ├── pipeline/       # Extraction operations setup
+│   └── storage/        # Database storage and operations
 ├── tests/              # Test suite
 ├── requirements.txt
 └── README.md
